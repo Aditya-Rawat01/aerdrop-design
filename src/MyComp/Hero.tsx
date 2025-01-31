@@ -4,25 +4,27 @@ import arrow from '../assets/arrow.png'
 import firstCloud from '../assets/cloud.png'
 export default function Hero () {
     return (
-    
-    <div className="w-screen h-screen relative grid grid-cols-12 grid-rows-12 pl-[180px] text-white overflow-x-hidden">
-        <div className='row-span-6 row-start-1 col-span-7 col-start-6'><img src={drone} className='h-[800px] w-[900px]' /></div>
-        <div className='col-start-1 col-span-6 row-start-4 relative'>
-            <p className='text-[18px] pl-2'>Need something but...</p>
-            <p className='text-[96px] leading-28 drop-shadow-custom'>Late Deliveries</p>
-            <p className='text-[20px] poppins p-2'>Why not take your deliveries aerial?</p>
+    <div className='h-[calc(100vh-92px)] w-full relative'>
+        <div className='relative pt-15 z-10 h-full flex flex-col text-white items-start gap-2'>
+        <span className='sm:text-[25px] pl-1 md:pl-2'>Need something, but...</span>
+        <span className='text-[48px] leading-14 sm:text-[60px] md:text-[80px] lg:text-[96px] md:leading-20 drop-shadow-custom'>Late <br></br> Deliveries?</span>
+        <span className='pl-1 md:pl-2'>Why don't take your route aerial?</span>
+
+        <div className='relative mt-5'>
+            <button  className='bg-custom flex pl-5 gap-2 items-center justify-center rounded-full w-[150px] h-[55px] shadow-topbar relative z-10'>
+                <p className='poppins font-medium text-black'>Try Now</p>
+                <img 
+                src={arrow}
+                alt='arrow'
+                className='w-1/3'
+                />
+            </button>
+            <img src={firstCloud} alt='cloud behind the button' className='w-40 h-32 absolute -top-1/2'/>
         </div>
-            <div className='row-start-8 col-start-1 col-span-3 relative'>
-                <div className='bg-custom shadow-black shadow-2xl w-[200px] h-[60px] rounded-full hover:cursor-pointer text-black absolute z-10 text-2xl font-medium grid grid-cols-12 grid-rows-12'>
-                    <p className='col-start-3 col-span-6 row-start-4 poppins'>Try Now</p>
-                    <img src={arrow} className='h-12 col-start-9 row-start-2 col-span-4 row-span-8'/>
-                   
-                </div>
-                <img src={firstCloud} className='w-[300px] absolute z-0 -top-14 -left-12'/> 
-            </div>
-           
-        <div className='col-start-12 row-start-2'> <img src={cloud} className='h-36'/></div>
-        
+        <div className='rounded-full p-4 ring-1 ring-slate-300 mt-5 underline text-xs md:text-base poppins text-slate-200'>10k+ people liked it already</div>
+        </div>
+        <img src={drone} alt='drone flying' className='absolute z-0 top-1/2 -translate-y-1/2 left-[10%] sm:right-0 sm:left-auto w-full sm:w-[300px] md:w-[600px] lg:w-[750px] xl:w-[900px] min-w-[450px]'/>
+        <img src={cloud} className='absolute -top-12 -right-6 lg:-right-12 w-32'/>
     </div>
     )
 }
