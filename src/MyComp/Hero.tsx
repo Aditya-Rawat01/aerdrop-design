@@ -7,7 +7,7 @@ import svg2 from '../assets/svg2.svg'
 import svg3 from '../assets/svg3.svg'
 export default function Hero () {
     return (
-    <div className='h-[calc(100vh-92px)] mt-[92px] w-full relative font-primary px-3 md:px-5 lg:px-12'>
+    <div className='h-[calc(100vh-96px)] mt-[92px] w-full relative font-primary px-3 md:px-5 lg:px-12 overflow-hidden'>
         <div className='relative pt-15 z-10 h-full flex flex-col text-white items-start gap-2'>
         <span className='sm:text-[25px] pl-1 md:pl-2'>Need something, but...</span>
         <span className='text-[48px] leading-14 sm:text-[60px] md:text-[80px] lg:text-[96px] md:leading-20 drop-shadow-custom'>Late <br></br> Deliveries?</span>
@@ -33,10 +33,12 @@ export default function Hero () {
             <p className='pl-[80px] md:pl-[84px] underline underline-offset-2 font-display'>10k+ people liked it already</p>
         
         </div>
+        
         </div>
+        <div className='w-full h-1 absolute z-100 bottom-0 left-0 bg-white rounded-full'></div>
         <img src={drone} alt='drone flying' className='absolute z-0 top-1/2 -translate-y-1/2 left-[10%] sm:right-0 sm:left-auto w-full sm:w-[300px] md:w-[600px] lg:w-[750px] xl:w-[900px] min-w-[450px]'/>
-        <img src={cloud} className='absolute -top-12 -right-6 lg:-right-12 w-32'/>
-        <div className='w-full col-span-1 sm:col-span-3 h-1 bg-white rounded-full'></div>
+        <img src={cloud} className='absolute -top-12 right-0 w-32'/>
+        
 
     </div>
     )

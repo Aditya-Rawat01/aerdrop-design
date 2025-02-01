@@ -4,7 +4,7 @@ import dollar from '../assets/dollar.svg'
 
 export function Work() {
     return (
-        <div className="w-full grid grid-cols-1 sm:grid-cols-3 grid-rows-4 relative md:mt-32 text-white font-display ">     
+        <div className="w-full grid grid-cols-1 sm:grid-cols-3 grid-rows-4 relative md:mt-32 text-white font-display overflow-hidden">     
             <div className='col-span-1 sm:col-span-3 text-[#FCA424] font-extrabold w-full flex text-2xl sm:text-5xl underline underline-offset-8 lg:text-7xl xl:text-8xl justify-center items-center font-primary'>Our Work Speak For Itself</div>
             <div className='row-span-3 cols-span-1 grid grid-rows-3 h-96'>
                 <div className='row-span-1 flex flex-col items-center justify-around'>
