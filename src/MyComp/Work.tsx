@@ -1,17 +1,17 @@
 import target from '../assets/accurate.svg'
 import support from '../assets/service.svg'
 import dollar from '../assets/dollar.svg'
-import bg from '../assets/dronebg.png'
+
 export function Work() {
     return (
-        <div className="w-full grid grid-cols-1 sm:grid-cols-3 grid-rows-4 relative text-white font-display">            
+        <div className="w-full grid grid-cols-1 sm:grid-cols-3 grid-rows-4 relative md:mt-32 text-white font-display ">     
             <div className='col-span-1 sm:col-span-3 text-[#FCA424] font-extrabold w-full flex text-2xl sm:text-5xl underline underline-offset-8 lg:text-7xl xl:text-8xl justify-center items-center font-primary'>Our Work Speak For Itself</div>
             <div className='row-span-3 cols-span-1 grid grid-rows-3 h-96'>
                 <div className='row-span-1 flex flex-col items-center justify-around'>
                     <img src={target}/>
                     <p className='text-xl text-white'>100% Satisfaction rate</p>
                 </div>
-                <div className='sm:row-span-2 flex flex-col items-center justify-center sm:justify-start p-5 text-center'>
+                <div className='sm:row-span-2 flex flex-col items-center justify-center sm:justify-start p-5 text-center px-3 md:px-5 lg:px-12'>
                     
                     <p>Your happiness is our priority. We’re committed to delivering excellence and won’t rest until you’re completely satisfied.</p>
                 </div>
@@ -36,7 +36,7 @@ export function Work() {
                     <p>Top-tier delivery at prices that won’t break the bank, quality and affordability, perfectly balanced for your convenience.</p>
                 </div>
             </div>
-
+        <div className='w-screen col-span-1 sm:col-span-3 h-1 bg-white rounded-full'></div>
         </div>
     )
 }
