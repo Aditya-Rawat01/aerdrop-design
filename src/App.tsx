@@ -6,7 +6,7 @@ import { Work } from "./MyComp/Work"
 
 function App() {
   return (
-    <div className="bg-primary flex flex-col items-center relative overflow-hidden">
+    <div className="bg-primary flex flex-col items-center relative overflow-x-hidden">
       <Topbar/>
       <Hero/>
       <Work/>

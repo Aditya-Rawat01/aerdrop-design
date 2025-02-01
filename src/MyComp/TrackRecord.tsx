@@ -3,7 +3,7 @@ export function TrackRecord() {
         <div className="h-screen w-full relative font-primary bg-custom px-3 md:px-5 lg:px-12 flex items-end justify-end">
             <div className=" h-[90vh] absolute bottom-0 left-0 flex items-center justify-center w-20 md:w-32 bg-white text-custom">
                 <span className="-rotate-90 text-5xl lg:text-6xl xl:text-7xl font-semibold h-32 flex w-[90vh] flex-col items-start justify-center">
-                    <p className="text-xs leading-0 ml-3">Growing Impact</p> <br/>
+                    <p className="text-xs md:text-base leading-0 ml-3 font-display">Growing Impact</p> <br/>
                     <p className="whitespace-nowrap leading-0 pb-3 drop-shadow-record">Our Track Record</p>
                     </span>
             </div>

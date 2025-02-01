@@ -30,7 +30,7 @@ export default function Hero () {
                 <img src={svg2} className='h-3/4 absolute top-2 left-8'/>
                 <img src={svg3} className='h-3/4 absolute top-2 left-14'/>
             </div>
-            <p className='pl-[80px] md:pl-[84px] underline underline-offset-2'>10k+ people liked it already</p>
+            <p className='pl-[80px] md:pl-[84px] underline underline-offset-2 font-display'>10k+ people liked it already</p>
         
         </div>
         </div>
